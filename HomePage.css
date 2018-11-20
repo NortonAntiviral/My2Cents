@@ -4,41 +4,47 @@ body {
 
 .top, .background {
   background: gold;
-  height: 30%;
+  margin:0%;
+  padding: 0%;
 }
 
 .middle{
   background: black;
-  padding: 2em 2em 2em 2em;
+  padding: 2% 2% 1% 2%;
 
 }
 
 .footer {
-  background: dimgray;
-}
-
-.numbers {
-  color: gold;
+  background: rgb(60, 60, 60);
+  padding: 1% 1% 1% 1%;
 }
 
 .welcome {
-  margin-left: .5em;
+  margin-left: 15%;
 }
 
 li {
-  padding: .8em;
-  margin-left: 2em;
+  padding: 7.5% 18%  7.5%;
+  /* margin-left: 2em; */
 }
 
 ul {
-  margin: 2.5em;
+  margin: 5%;
 }
 
-.footer {
-  padding: .5em;
+.is-horizontal, #start{
+  padding: 1.5% 0 1.5% 0;
 }
 
-footer > div > p > a {
+.footer > div > p > a,.numbers {
   color: gold;
-  margin:4em;
+  padding: 0 4% 0 4%;
+  margin-top:none;
+  margin-bottom: none;
+  padding-top: none;
+  padding-bottom: none;
+}
+
+.footer > div > p > a:hover {
+  color:black;
 }
