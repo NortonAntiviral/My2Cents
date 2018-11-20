@@ -1,33 +1,406 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <title>My 2 Cents</title>
-</head>
-
-<body>
-  <div class="background">
-    <div class="top">
-      <!-- <img src="https://cdn3.iconfinder.com/data/icons/mesc-emojis/512/mesc_Artboard_3_copy_27-22-512.png" alt=""> -->
-      <img src="https://cdn3.iconfinder.com/data/icons/business-world-icon-set/434/piggybank-simple-black-icon-512.png" alt="logo">
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Demo</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style media="screen">
+      .spacer{height: 500px;}
+    </style>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Site Title</li>
+          <li>
+            <a href="#">One</a>
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
     </div>
-    <div class="middle">
-      <h1 id="greeting">Coming Soon</h1>
-      <br>
-      <h2> <span id="demo"></span></h2>
+    <!-- Typography -->
+    <div class="row"> Test
+      <!-- heading -->
+      <h1>Heading 1 <small>Secondary Text</small> </h1>
+      <h2 class="subheader">Heading 2 <small>Secondary Text</small> </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <strong>incididunt ut labore et dolore</strong> magna aliqua. Ut enim ad minim veniam, quis nostrud <em>exercitation ullamco</em> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <a href="#">reprehenderit</a> in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p class="stat">Server Up-Time</p>
+      <hr>
+      <!-- alignment -->
+      <p class="text-left">left alignment</p>
+      <p class="text-center">centered</p>
+      <p class="text-right">right alignment</p>
+      <p class="text-justify">Justified</p>
+
+      <!-- floats -->
+      <div class="callout clearfix">
+        <a class="button float-left">left</a>
+        <a class="button float-right">right</a>
+      </div>
+
+      <hr>
+
+      <code>&lt; div class="myclass"&gt;Hello World&lt;/div&gt;</code>
+      <p>Press<kbd>Cmd+r</kbd> (or <kbd>Ctrl+r</kbd> on Windows)</p>
+
+      <hr>
+      <!-- blockquote -->
+      <blockquote cite="">
+        This is a blockquote from foundation <cite>Bob Hope</cite>
+      </blockquote>
+
+      <!-- lists -->
+      <ul class="no-bullet">
+        <li>Item One</li>
+        <li>Item two</li>
+        <li>Item Three
+        <ul class="no-bullet">
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+        </ul>
+        </li>
+        <li>Item Four</li>
+      </ul>
+
+      <ol>
+        <li>Item One</li>
+        <li>Item two</li>
+        <li>Item Three
+        <ul>
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+          <li>Nested Item</li>
+        </ul>
+        </li>
+        <li>Item Four</li>
+      </ol>
+
+      <!-- visibility -->
+      <p class="hide">Hidden</p>
+      <p class="invisible">Invisible</p>
+      <p>You are on a small screen or larger.</p>
+      <p class="show-for-medium">You are on a medium screen or larger.</p>
+      <p class="show-for-large">You are on a large screen or larger.</p>
+      <p class="hide-for-small-only">You are not on a small screen </p>
+      <p class="hide-for-medium-only">You are not on a medium screen </p>
+      <p class="hide-for-large-only">You are not on a large screen </p>
+      <p class="show-for-landscape">You are in Landscape</p>
+      <p class="show-for-portrait">You are in portrait</p>
+
+      <hr>
+
+      <div class="row">
+        <!-- buttons -->
+        <button type="button" class="button" name="button">Button</button>
+        <a href="#" class="button">Link</a>
+        <input type="button" name="" class="button" value="Input">
+
+        <br>
+        <!-- color buttons -->
+        <button type="button" class="button success" name="button">Button</button>
+        <button type="button" class="button alert" name="button">Button</button>
+        <button type="button" class="button warning" name="button">Button</button>
+        <button type="button" class="button secondary" name="button">Button</button>
+        <button type="button" class="button disabled" name="button">Button</button>
+        <br>
+        <!-- sizes -->
+        <button type="button" class="button tiny" name="button">Button</button>
+        <button type="button" class="button small" name="button">Button</button>
+        <button type="button" class="button" name="button">Button</button>
+        <button type="button" class="button large" name="button">Button</button>
+        <button type="button" class="button expanded" name="button">Button</button> <!--can add large,tiny etc to expanded-->
+        <br>
+        <!-- no fill -->
+        <button type="button" class="button success hollow" name="button">Button</button>
+        <button type="button" class="button alert hollow" name="button">Button</button>
+        <button type="button" class="button warning hollow" name="button">Button</button>
+        <button type="button" class="button secondary hollow" name="button">Button</button>
+
+      </div>
+      <hr>
+      <div class="row">
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="">Name</label>
+            <input type="text" name="" value="" placeholder="Name">
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="">Email</label>
+            <input type="email" name="" value="" placeholder="Email">
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="">Number</label>
+            <input type="number" name="" value="" >
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="">Message</label>
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form class="" action="index.html" method="post">
+          <div class="">
+            <label for="">Gender</label>
+            <select class="" name=""> <!--<select multiple>-->
+              <option value="">Male</option>
+              <option value="">Female</option>
+            </select>
+          </div>
+          <fieldset class="fieldset">
+          <legend>A Fieldset</legend>
+          <input type="checkbox" name="" value=""><label for="">checkbox</label>
+          <input type="checkbox" name="" value=""><label for="">checkbox</label>
+          <input type="checkbox" name="" value=""><label for="">checkbox</label>
+        </fieldset>
+        <label for="fileUpload" class="button">Upload File</label>
+        <input type="file" id="fileUpload" class="show-for-sr" name="" value="">
+
+        <label for="">password</label>
+        <input type="password" name="" value="">
+        <p class="help-text">Your password must be 8 characters or more</p>
+
+        <!-- groups -->
+        <div class="input-group">
+          <span class="input-group-label">@</span>
+          <input class="input-group-field" type="email">
+          <div class="input-group-button">
+              <input type="submit" class="button"name="" value="Submit">
+            </div>
+        </div>
+
+        <div class="switch">
+          <input class="switch-input" id="mySwitch" type="checkbox" name="exampleswitch" >
+          <label for="mySwitch" class="switch-paddle"> <span class="show-for-sr">Enabled</span> </label>
+        </div>
+
+        <div class="slider" data-slider data-initial-start='0' data-end='20'>
+          <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span> <!--change one each tick-->
+          <span class="slider-fill" data-slider-fill></span>
+          <input type="hidden" name="" value="">
+        </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <table class="hover stack table-scroll"><!--default striped, stack makes responsive, scroll can scroll horizontal-->
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Stephanie</td>
+            <td>Landon</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>Johnson</td>
+            <td>19</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="row">
+        <!-- menu -->
+        <ul class="menu">
+          <li class="menu-text">Site Title</li>
+          <li class="active"><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
+          <li><a href="">Link 3</a></li>
+          <li><a href="">Link 4</a></li>
+        </ul>
+
+        <ul class="menu vertical"> <!--simple removes padding-->
+          <li class="active"><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
+          <li><a href="">Link 3</a></li>
+          <li><a href="">Link 4</a></li>
+        </ul>
+
+        <ul class="menu icon-top">
+          <li><a href="#"><i class="fi-list"></i> <span>One</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Two</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Three</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Four</span></a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <!-- callouts -->
+        <div class="callout">
+          <p>This is a callout</p>
+        </div>
+        <div class="callout secondary">
+          <p>This is a callout</p>
+        </div>
+        <div class="callout success">
+          <p>This is a callout</p>
+        </div>
+        <div class="callout warning">
+          <p>This is a callout</p>
+        </div>
+        <div class="callout alert">
+          <p>This is a callout</p>
+        </div>
+      </div>
+
+      <hr>
+      <!-- progress bar -->
+      <div class="success progress" role="progressbar">
+        <div class="progress-meter" style="width:25%">
+          <p class="progress-meter-text">25%</p>
+        </div>
+      </div>
+
+      <div class="alert progress" role="progressbar">
+        <div class="progress-meter" style="width:98%">
+          <p class="progress-meter-text">98%</p>
+        </div>
+      </div>
+
+      <div class="warning progress" role="progressbar">
+        <div class="progress-meter" style="width:75%">
+          <p class="progress-meter-text">75%</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- labels -->
+      <span class="secondary label">Secondary Label</span>
+      <span class="success label">Success Label</span>
+      <span class="alert label">Alert Label</span>
+      <span class="warning label">Warning Label</span>
+
+      <hr>
+
+      <!-- badges -->
+      <span class="secondary badge">1</span>
+      <span class="success badge">2</span>
+      <span class="alert badge">A</span>
+      <span class="warning badge">B</span>
+
+      <hr>
+
+      <!-- breadcrumbs -->
+      <nav row="navigation">
+        <ul class="breadcrumbs">
+          <li href="#"><a href="#">Home</a></li>
+           <li href="#"><a href="#" class="disabled">Private</a></li>
+          <li href="#"><a href="#">Posts</a></li>
+          <li>My Post</li>
+        </ul>
+      </nav>
+
+      <!-- pagination -->
+      <ul class="pagination" role="navigation">
+        <li class="disabled">Previous</li>
+        <li class="current">1</li>
+        <li ><a href="#">2</a></li>
+        <li ><a href="#">3</a></li>
+        <li ><a href="#">4</a></li>
+        <li class="ellipsis"></li>
+        <li ><a href="#">13</a></li>
+        <li ><a href="#">14</a></li>
+        <li ><a href="#">Next</a></li>
+      </ul>
+
+      <hr>
+        <!-- grid -->
+      <div class="row">
+        <div class="columns large-8 small-8 medium-6">
+          <h3>Main Column</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="columns large-4 small-4 medium-6">
+          <h3>Side Bar</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-3 medium-3">
+          <h3>Box</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+        </div>
+        <div class="columns large-3 medium-3">
+          <h3>Box 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+        </div>
+        <div class="columns large-3 medium-3">
+          <h3>Box 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+        </div>
+        <div class="columns large-3 medium-3">
+          <h3>Box 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+        </div>
+      </div>
+
+
+
+      <div class="spacer">
+
+      </div>
+
+
     </div>
-  </div>
-  <div class="bottom">
-    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x"></i></a>
-    <a href="https://www.LinkedIN.com/"><i class="fab fa-linkedin-in fa-3x"></i></a>
-    <a href="https://www.Twitter.com/"><i class="fab fa-twitter fa-3x"></i></a>
-  </div>
-</body>
-<script type="text/javascript" src="script.js">
 
-</script>
-
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
