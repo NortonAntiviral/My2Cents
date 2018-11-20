@@ -1,0 +1,44 @@
+body {
+  background: black;
+}
+
+.top, .background {
+  background: gold;
+  height: 30%;
+}
+
+.middle{
+  background: black;
+  padding: 2em 2em 2em 2em;
+
+}
+
+.footer {
+  background: dimgray;
+}
+
+.numbers {
+  color: gold;
+}
+
+.welcome {
+  margin-left: .5em;
+}
+
+li {
+  padding: .8em;
+  margin-left: 2em;
+}
+
+ul {
+  margin: 2.5em;
+}
+
+.footer {
+  padding: .5em;
+}
+
+footer > div > p > a {
+  color: gold;
+  margin:4em;
+}
