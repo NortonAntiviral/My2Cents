@@ -14,18 +14,23 @@ body {
 
 }
 
-.footer {
+.footer,.links, .bottom>footer {
   background: rgb(60, 60, 60);
   padding: 1% 1% 1% 1%;
+  margin:auto;
+}
+footer{
+  margin:0;
+  padding:0;
 }
 
 .welcome {
   margin-left: 15%;
 }
 
-li {
-  padding: 7.5% 18%  7.5%;
-  /* margin-left: 2em; */
+.listItem{
+  padding: 7.5% 18%  7.5% 18%;
+  /* margin: 1% 0 5% 0; */
 }
 
 ul {
@@ -38,7 +43,7 @@ ul {
 
 .footer > div > p > a,.numbers {
   color: gold;
-  padding: 0 4% 0 4%;
+  padding: 0 1.8% 0 1.8%;
   margin-top:none;
   margin-bottom: none;
   padding-top: none;
