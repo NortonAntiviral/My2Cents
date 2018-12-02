@@ -1,5 +1,6 @@
 body {
   background: black;
+  height: 100%;
 }
 
 .top, .background {
@@ -8,13 +9,17 @@ body {
   padding: 0%;
 }
 
+.numbers {
+  color: gold;
+}
+
 .middle{
   background: black;
   padding: 2% 2% 1% 2%;
 
 }
 
-.footer,.links, .bottom>footer {
+.footer,.links, .bottom > footer {
   background: rgb(60, 60, 60);
   padding: 0.52% 1% 0.52% 1%;
   margin:auto;
@@ -52,4 +57,10 @@ ul {
 
 .footer > div > p > a:hover {
   color:black;
+}
+
+.bottom {
+  height: 100%;
+  margin: 0px;
+  background: rgb(60, 60, 60);
 }
