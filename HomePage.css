@@ -4,13 +4,12 @@ body {
 }
 
 .top, .background {
-  background: gold;
   margin:0%;
   padding: 0%;
 }
 
 .numbers {
-  color: gold;
+  color: goldenrod;
 }
 
 .middle{
@@ -47,7 +46,6 @@ ul {
 }
 
 .footer > div > p > a,.numbers {
-  color: gold;
   padding: 0 1.8% 0 1.8%;
   margin-top:none;
   margin-bottom: none;
@@ -64,3 +62,32 @@ ul {
   margin: 0px;
   background: rgb(60, 60, 60);
 }
+
+#search {
+  padding: 10% 10% 10% 10% ;
+  margin : 10% 10% 10% 10% ;
+}
+
+.yellow {
+  color: goldenrod;
+  text-decoration-color: black;
+  border-color: black;
+}
+
+.is-yellow{
+  background-color: goldenrod;
+  color:black;
+  border-color: black;
+}
+
+.is-yellow:hover, .yellow:hover {
+  background-color: 
+}
+
+.button {
+  position: relative;
+}
+
+/* #search, #search:hover {
+  position: absolute;
+} */

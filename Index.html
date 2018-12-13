@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My2Cents Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" />
+    <title>My2C Home</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" href="HomePage.css">
-    <link rel="canonical" href="https://bulma.io/documentation/components/navbar/">
-    <link rel="stylesheet" href="https://bulma.io/css/bulma-docs.min.css?v=201811050929">
+    <!-- <link rel="stylesheet" href="https://bulma.io/css/bulma-docs.min.css?v=201811050929"> -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
   </head>
   <body>
     <div class="top">
@@ -62,19 +62,19 @@
 
   <div class="field has-addons">
 <div class="control">
-<input class="input is-large is-rounded" type="text" placeholder="Keyword">
+<span id="search"><input class="input is-large is-rounded" type="text" placeholder="Keyword">
 </div>
 <div class="control">
-<a class="button is-warning is-large is-rounded">
+<a class="button is-yellow is-large is-rounded hover">
 Search
 </a>
-</div>
+</div></span>
 </div>
 
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-large is-warning is-rounded">
+            <a class="button is-large is-yellow is-rounded">
               <strong>Sign up</strong>
             </a>
             <a class="button is-large is-black is-rounded">
@@ -91,8 +91,8 @@ Search
   </div>
 
     <div class="middle columns is-mobile tile is-ancestor">
-        <div class="tile column is-parent">
-            <article class="tile is-vertical is-child notification is-warning">
+        <div class="tile column is-parent ">
+            <article class="tile is-vertical is-child notification is-yellow">
             <p class="title is-centered is-1 is-spaced is-large welcome">Welcome to My 2Cents!</p>
             <ul class="subtitle is-large is-1 is-spaced">
               <li class="listItem"><i class="fas fa-wifi fa-1x"></i> <i>Stay Connected</i></li>
@@ -170,7 +170,7 @@ Search
           <label class="label">Phone Number</label>
   <div class="field has-addons">
         <p class="control">
-          <a class="button is-static is-large is-rounded">
+          <a class="button is-static is-large is-rounded is-yellow">
             (###-###-####)
           </a>
         </p>
@@ -196,10 +196,10 @@ Search
       <footer class="footer">
   <div class="content has-text-centered">
     <p class="">
-      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x links"></i></a>
-      <a href="https://www.LinkedIN.com/"><i class="fab fa-linkedin-in fa-3x links"></i></a>
-      <a href="https://www.Twitter.com/"><i class="fab fa-twitter fa-3x links"></i></a>
-      <a href="https://www.Github.com/"><i class="fab fa-github fa-3x links"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x links yellow"></i></a>
+      <a href="https://www.LinkedIN.com/"><i class="fab fa-linkedin-in fa-3x links yellow"></i></a>
+      <a href="https://www.Twitter.com/"><i class="fab fa-twitter fa-3x links yellow"></i></a>
+      <a href="https://www.Github.com/"><i class="fab fa-github fa-3x links yellow"></i></a>
     </p>
   </div>
 </footer>
