@@ -15,7 +15,7 @@ body {
 .middle{
   background: black;
   padding: 2% 2% 1% 2%;
-  height: 49em !important;
+  height: 85vh !important;
 
 }
 
@@ -54,19 +54,14 @@ ul {
   padding-bottom: none;
 }
 
-.footer > div > p > a:hover {
+/* .footer > div > p > a:hover {
   color:black;
-}
+} */
 
 .bottom {
   height: 100%;
   margin: 0px;
   background: rgb(60, 60, 60);
-}
-
-#search {
-  padding: 10% 10% 10% 10% ;
-  margin : 10% 10% 10% 10% ;
 }
 
 .yellow {
@@ -75,25 +70,16 @@ ul {
   border-color: black;
 }
 
-.is-yellow{
+/* .is-yellow{
   background-color: hsl(43, 74%, 60%);
   color:black;
   border-color: black;
-}
-
-
-.button {
-  position: relative;
-}
-/* #search, #search:hover {
-  position: absolute;
 } */
 
 .links:hover{
   color:hsl(55, 67%, 70%);
 }
 
-.button:hover{
-  background-color: hsl(55, 67%, 70%);
-  border-color: black
+.search {
+  padding-top: 12px;
 }
