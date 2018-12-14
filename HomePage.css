@@ -15,6 +15,7 @@ body {
 .middle{
   background: black;
   padding: 2% 2% 1% 2%;
+  height: 49em !important;
 
 }
 
@@ -69,25 +70,30 @@ ul {
 }
 
 .yellow {
-  color: goldenrod;
+  color: hsl(43, 74%, 60%);
   text-decoration-color: black;
   border-color: black;
 }
 
 .is-yellow{
-  background-color: goldenrod;
+  background-color: hsl(43, 74%, 60%);
   color:black;
   border-color: black;
 }
 
-.is-yellow:hover, .yellow:hover {
-  background-color: 
-}
 
 .button {
   position: relative;
 }
-
 /* #search, #search:hover {
   position: absolute;
 } */
+
+.links:hover{
+  color:hsl(55, 67%, 70%);
+}
+
+.button:hover{
+  background-color: hsl(55, 67%, 70%);
+  border-color: black
+}
