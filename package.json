@@ -4,7 +4,8 @@
   "description": "",
   "main": "bundle.js",
   "dependencies": {
-    "bulma": "^0.7.2"
+    "bulma": "^0.7.2",
+    "react": "^16.6.3"
   },
   "devDependencies": {},
   "scripts": {
