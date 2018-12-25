@@ -83,3 +83,10 @@ ul {
 .search {
   padding-top: 12px;
 }
+
+.is-searchbtn:hover{
+  color:hsl(55, 67%, 70%);
+}
+ .is-login:hover {
+   background-color:rgba(32, 32, 30, 0.89) !important;
+ }
