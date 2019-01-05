@@ -8,8 +8,41 @@
     <link rel="stylesheet" href="node_modules/components-font-awesome/css/fontawesome-all.min.css">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+
   </head>
   <body>
+    <div class="modal" id="loginScreen">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+
+          <div class="field is-horizontal">
+            <div class="field-body">
+          <div class="field is-expanded">
+            <label class="label">Username</label>
+            <p class="control is-expanded has-icons-left has-icons-right ">
+              <input class="input is-large is-rounded" type="email" placeholder="Username" required>
+              <span class="icon is-medium is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+    <span class="icon is-medium is-right">
+      <i class="fas fa-check"></i>
+    </span>
+          </p>
+          <p class="help">Enter Username or email</p>
+          </div>
+                <div class="field">
+                  <label class="label">Password</label>
+              <input class="input is-large is-rounded" type="password" placeholder="Password" required>
+              <p class="help">Must be at least 8 characters</p>
+          </div>
+          </div>
+          </div>
+
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
     <div class="top">
       <nav class="navbar is-mobile is-dark level" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -76,7 +109,7 @@ Search
             <a class="button is-large is-warning is-rounded">
               <strong>Sign up</strong>
             </a>
-            <a class="button is-large is-black is-rounded is-login">
+            <a class="button is-large is-black is-rounded is-login " id="Login" >
               Log in
             </a>
           </div>
@@ -206,6 +239,9 @@ Search
 
 
   </body>
+  <script type="text/javascript" src="HomePage.js">
+
+  </script>
   <script type="text/javascript" src="node_modules\react\index.js">
 
   </script>
