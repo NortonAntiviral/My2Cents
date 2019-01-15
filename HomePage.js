@@ -1,4 +1,4 @@
-var loginBtn = document.querySelector("#Login");
+var loginBtn = document.getElementById("Login");
 var login = document.querySelector("loginScreen");
 
 // alert("CONNECTED");
@@ -8,9 +8,9 @@ function initialize() {
 }
 
 function setUpButtons() {
-loginBtn.addEventListener("click",function() {
+loginBtn.addEventListener('click',function() {
 
-alert("CONNECTED");
+console.log('CONNECTED');
 
 // login.className += ".is-active";
 
