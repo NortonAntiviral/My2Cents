@@ -8,9 +8,9 @@ function initialize() {
 }
 
 function setUpButtons() {
-loginBtn.addEventListener('click',function() {
+loginBtn.addEventListener('submit',function() {
 
-console.log('CONNECTED');
+alert('CONNECTED');
 
 // login.className += ".is-active";
 
