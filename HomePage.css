@@ -1,4 +1,5 @@
 body {
+  position: fixed;
   background: black;
   height: 100%;
 }
@@ -89,4 +90,12 @@ ul {
 }
  .is-login:hover {
    background-color:rgba(32, 32, 30, 0.89) !important;
+ }
+
+ .logIn {
+   background: rgb(60, 60, 60);!important;
+ }
+
+ .modal {
+   position: relative;
  }

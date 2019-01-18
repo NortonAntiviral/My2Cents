@@ -1,21 +1,45 @@
-var loginBtn = document.getElementById("Login");
-var login = document.querySelector("loginScreen");
+// BUTTONS
+var searchBtn = document.getElementById('search');
+var signUp = document.getElementById("signUp");
+var loginBtn = document.getElementById("login");
 
-// alert("CONNECTED");
+// Login Screen
+var loginScreen = document.getElementById('popUp');
 
-function initialize() {
-  setUpButtons();
-}
+//Close Button
+var closeBtn = document.getElementById('close');
 
-function setUpButtons() {
-loginBtn.addEventListener('submit',function() {
+// LOGIN BUTTON
+loginBtn.onclick = function LogInFunction () {
+  // console.log('Log In Connected');
 
-alert('CONNECTED');
+  if(loginScreen.className == 'is-active') {
+  
+    return;
+  } else {
+      //activate the Modal
+    loginScreen.className = "is-active";
+  }
+  
+};
 
-// login.className += ".is-active";
+// CLOSE MODALS AND POPUPS
 
+// CLOSE LOGIN MODAL
 
+closeBtn.addEventListener('submit',function () {
+  loginScreen.classList.remove("is-active");
+});
 
-}
-);
-}
+// closeBtn.onclick = function () {
+//   if(loginScreen.className == 'is-active') {
+//   loginScreen.classList.remove("is-active");
+    
+//   } else {
+//     return;
+//   }
+// };
+
+signUp.onclick = function signUpFunction () {
+  console.log('Sign Up Connected!');
+};
