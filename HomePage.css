@@ -1,5 +1,5 @@
 body {
-  position: fixed;
+  position: relative;
   background: black;
   height: 100%;
 }
@@ -96,6 +96,6 @@ ul {
    background: rgb(60, 60, 60);!important;
  }
 
- .modal {
-   position: relative;
+ .modal-card {
+  text-align:  center;
  }
