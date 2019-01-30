@@ -1,7 +1,9 @@
 // STATUS VALUES
 const Status = document.getElementById('status');
 
-// POST FUNCTION
-const Post = (text,image,link) => {
+console.log
 
-}
+// POST FUNCTION
+// const Post = (text,image,link) => {
+
+// }
