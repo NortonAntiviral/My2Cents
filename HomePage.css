@@ -10,7 +10,7 @@ body {
 }
 
 .numbers {
-  color: goldenrod;
+  /* color: goldenrod; */
 }
 
 .middle{
@@ -24,6 +24,7 @@ body {
   background: rgb(60, 60, 60);
   padding: 0.52% 1% 0.52% 1%;
   margin:auto;
+  color: #000;
 }
 footer{
   margin:0;
@@ -66,7 +67,7 @@ ul {
 }
 
 .yellow {
-  color: hsl(43, 74%, 60%);
+  /* color: hsl(43, 74%, 60%); */
   text-decoration-color: black;
   border-color: black;
 }
@@ -78,7 +79,8 @@ ul {
 } */
 
 .links:hover{
-  color:hsl(55, 67%, 70%);
+  /* color:hsl(55, 67%, 70%); */
+  color:#ff0537
 }
 
 .search {
@@ -98,4 +100,8 @@ ul {
 
  .modal-card {
   text-align:  center;
+ }
+
+ p,.listItem {
+   color: #000 !important;
  }
