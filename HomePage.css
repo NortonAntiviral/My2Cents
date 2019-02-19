@@ -72,15 +72,15 @@ ul {
   border-color: black;
 }
 
-/* .is-yellow{
+.is-yellow{
   background-color: hsl(43, 74%, 60%);
   color:black;
   border-color: black;
-} */
+}
 
 .links:hover{
-  /* color:hsl(55, 67%, 70%); */
-  color:#ff0537
+  color:hsl(55, 67%, 70%);
+  /* color:#ff0537 */
 }
 
 .search {
@@ -104,4 +104,8 @@ ul {
 
  p,.listItem {
    color: #000 !important;
+ }
+
+ #forgotBtn {
+   color: whitesmoke;
  }
